@@ -51,3 +51,15 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	}
 	return (printed_chars);
 }
+#include <stdio.h>
+
+int main(void)
+{
+	int num1 = 123;
+	float num2 = 3.14159;
+
+	printf("Printing an integer with precision: %.3d\n", num1);
+	printf("Printing a float with precision: %.2f\n", num2);
+
+	return (0);
+}
